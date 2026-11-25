@@ -29,10 +29,6 @@
   list-style: none;
 }
 
-.header__links-list-item {
-  position: relative;
-}
-
 .header__link {
   text-decoration: underline;
   font-size: 18px;
@@ -44,6 +40,7 @@
 }
 
 .header__links-list-item {
+  position: relative;
   list-style-type: circle;
 
 }
