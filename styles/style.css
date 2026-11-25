@@ -6,7 +6,8 @@
 }
 
 .header__address {
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
   justify-self: end;
 }
 
@@ -42,13 +43,13 @@
   text-decoration: none;
 }
 
-.header__links-list-item:not(:last-child)::after {
-  content: "○";
-  color: #999;
-  position: absolute;
-  right: -18px;
-  top: 50%;
-  transform: translateY(-50%);
+.header__links-list-item {
+  list-style-type: circle;
+
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
 }
 
 .address {
@@ -104,7 +105,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 100px;
-  line-height: 115px;
+  line-height: 1.15;
 }
 
 .aligned-text_left {
@@ -278,7 +279,7 @@
   height: 114px;
 }
 
-.about h3 {
+.about__title {
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 100px;
@@ -297,6 +298,7 @@
   align-items: start;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 180px;
 }
 
 .footer__menu-list {
